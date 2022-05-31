@@ -25,7 +25,7 @@ function Login() {
       const accessToken = res.data.token;
       auth_service.setAccessToken(accessToken);
       typeNotify = NOTIFY_NAME.NOTI_TYPE_SUCCESS;
-      navigate(`/${PATH_NAME.ADMIN_MASTER}/${PATH_NAME.ADMIN_USER_HOME}`);
+      navigate(`/${PATH_NAME.ADMIN_MASTER}/${PATH_NAME.ADMIN_HOME}`);
     } else {
       typeNotify = NOTIFY_NAME.NOTI_TYPE_DANGER;
     }

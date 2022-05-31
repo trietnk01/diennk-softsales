@@ -6,7 +6,7 @@ import auth_service from "services/authService";
 
 function GuestGuard({ children }: IChildren) {
   const isAuth = auth_service.isAuthenticated();
-  if (isAuth) return <Navigate to={`/${PATH_NAME.ADMIN_MASTER}/${PATH_NAME.ADMIN_USER_HOME}`} />;
+  if (isAuth) return <Navigate to={`/${PATH_NAME.ADMIN_MASTER}/${PATH_NAME.ADMIN_HOME}`} />;
   return <Fragment>{children}</Fragment>;
 }
 

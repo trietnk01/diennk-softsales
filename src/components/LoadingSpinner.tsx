@@ -1,4 +1,4 @@
-import { Spin } from "antd";
+import { Spin, Space } from "antd";
 import { useAppSelector } from "hooks";
 import React from "react";
 
@@ -9,8 +9,10 @@ function LoadingSpinner() {
   return (
     <React.Fragment>
       {isShow && (
-        <div style={{ display: "flex", position: "fixed", left: "0", top: "0", backgroundColor: "#000000db", width: "100vw", height: "100vh", justifyContent: "center", alignItems: "center" }}>
-          <Spin />
+        <div style={{ position: "fixed", display: "flex", left: "0", top: "0", backgroundColor: "rgb(0 0 0 / 77%)", width: "100vw", height: "100vh", justifyContent: "center", alignItems: "center" }}>
+          <Space size="middle">
+            <Spin size="large" />
+          </Space>
         </div>
       )}
     </React.Fragment>

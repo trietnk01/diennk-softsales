@@ -24,10 +24,7 @@ function initRequest(): void {
         requestCount++;
         store.dispatch(loadingSlice.actions.showSpinner());
       }
-      const accessToken: string = auth_service.getAccessToken();
-      if (accessToken) {
-        config.headers["x-auth-token"] = accessToken;
-      }
+      const accessToken: string | null = auth_service.getAccessToken();
       return config;
     },
     function (err: any): any {

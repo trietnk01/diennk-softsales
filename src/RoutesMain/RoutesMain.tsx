@@ -23,7 +23,7 @@ function RoutesMain() {
           <Route path={PATH_NAME.ADMIN_MASTER} element={<AdminMaster />}>
             <Route path="*" element={<NoMatchFrm />} />
             <Route
-              path={PATH_NAME.ADMIN_USER_HOME}
+              path={PATH_NAME.ADMIN_HOME}
               element={
                 <AuthGuard>
                   <Home />
@@ -31,7 +31,6 @@ function RoutesMain() {
               }
             />
           </Route>
-          <Route path="" element={<Home />} />
           <Route path="*" element={<NoMatchFrm />} />
         </Routes>
       </Suspense>

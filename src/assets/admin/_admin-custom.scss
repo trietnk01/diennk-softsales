@@ -33,31 +33,3 @@
     }
   }
 }
-nav {
-  ul {
-    li {
-      line-height: 60px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      button {
-        font-size: 16px;
-        padding: 0 20px;
-        &:hover,
-        &.active {
-          color: cyan;
-          background-color: #1e1e1e;
-          border-left-color: cyan;
-        }
-      }
-    }
-  }
-}
-.notify-container {
-  // begin
-  opacity: 0;
-  transition-property: opacity;
-  transition-duration: 2s;
-  // end
-}
-.notify-container.el-show {
-  opacity: 1;
-}
